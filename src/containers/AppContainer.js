@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import App from '../presentationals/App'
+import Page from '../presentationals/Page'
 import ShowResult from '../containers/ShowResult'
 import Result from '../presentationals/Result'
 
@@ -14,7 +14,7 @@ let AppContainer = ({ id }) => {
     }
     return  (
             <div>
-            <App />
+            <Page id={ id }/>
             </div>
     )
 }
