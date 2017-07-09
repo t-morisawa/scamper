@@ -10,9 +10,9 @@ const initialData = {
 }
 
 const data = (state = initialData, action) => {
+    console.log(state);
     switch (action.type) {
     case 'SUBMIT':
-        console.log(state)
         let log = state.text
         log.push({
             id: state.id,

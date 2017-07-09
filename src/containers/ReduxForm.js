@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { componentDidMount } from 'react-dom'
 import { connect } from 'react-redux'
 import { submit as submitAction } from '../actions'
 
