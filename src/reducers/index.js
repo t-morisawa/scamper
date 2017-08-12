@@ -10,7 +10,6 @@ const initialData = {
 }
 
 const data = (state = initialData, action) => {
-    console.log(state);
     switch (action.type) {
     case 'SUBMIT':
         let log = state.text
@@ -27,8 +26,20 @@ const data = (state = initialData, action) => {
     }
 }
 
+const resultId = (state = { id: 0 }, action ) => {
+    switch (action.type) {
+    case 'TOGGLE_RESULT':
+        return {
+            id: state.id + 1,
+        }
+    default:
+        return state
+    }
+}
+
 const scamperApp = combineReducers({
     data,
+    resultId
 })
 
 export default scamperApp

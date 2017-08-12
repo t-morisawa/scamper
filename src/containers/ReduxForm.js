@@ -2,29 +2,34 @@ import React, { Component } from 'react';
 import { componentDidMount } from 'react-dom'
 import { connect } from 'react-redux'
 import { submit as submitAction } from '../actions'
+import { Form } from 'semantic-ui-react'
 
-let ReduxForm = ({ dispatch }) => {
-    let input
+class ReduxForm extends Component {
+    constructor(props) {
+        super(props)
+    }
 
-    return (
-            <form onSubmit={events => {
-                return new Promise(resolve => {
-                    events.preventDefault()
-                    if (!input.value.trim()) {
-                        return
-                    }
-                    dispatch(submitAction(input.value))
-                    input.value = '';
-                })
-            }}>
-            <div>
-            <input ref={node => {
-                input = node
-            }} />
-            </div>
-            <button type="submit">Submit</button>
-            </form>
-    );
+    componentDidMount() {
+        this.nameInput.focus();
+    }
+
+    render() {
+        return (
+                <Form onSubmit={events => {
+                    return new Promise(resolve => {
+                        events.preventDefault()
+                        this.props.dispatch(submitAction(this.nameInput.value))
+                        this.nameInput.value = ''
+                    })
+                }}>
+                <div>
+                <input ref={node => {
+                    this.nameInput = node
+                }} />
+                </div>
+                </Form>
+        );
+    }
 }
 
 ReduxForm = connect()(ReduxForm)

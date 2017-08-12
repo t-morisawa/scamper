@@ -1,20 +1,20 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Page from '../presentationals/Page'
-import ShowResult from '../containers/ShowResult'
+import Interaction from '../presentationals/Interaction'
+import ResultView from '../presentationals/ResultView'
 import Result from '../presentationals/Result'
 
 let AppContainer = ({ id }) => {
     if ( id > 6 ) {
         return (
                 <div>
-                <ShowResult />
+                <ResultView />
                 </div>
         )
     }
     return  (
             <div>
-            <Page id={ id }/>
+            <Interaction id={ id }/>
             </div>
     )
 }
