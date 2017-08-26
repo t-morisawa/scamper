@@ -1,18 +1,16 @@
 import React from 'react'
+import { List } from 'semantic-ui-react'
 
-const Result = ({ text }) => {
+const ResultList = ({ text }) => {
     const result = text
+    const resultList = result.map((elem) =>
+                                  <List.Item key={elem.id}>{elem.text}</List.Item>
+                                 );
     return (
-            <ul>
-            <li>{result[0].text}</li>
-            <li>{result[1].text}</li>
-            <li>{result[2].text}</li>
-            <li>{result[3].text}</li>
-            <li>{result[4].text}</li>
-            <li>{result[5].text}</li>
-            <li>{result[6].text}</li>
-            </ul>
+            <List>
+            {resultList}
+            </List>
     )
 }
 
-export default Result
+export default ResultList

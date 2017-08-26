@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import { Button } from 'semantic-ui-react'
 
-class ToggleButton extends Component {
+class StartButton extends Component {
     constructor(props) {
         super(props)
     }
 
     componentDidMount() {
-        this.refs.togglebutton.focus();
+        this.refs.startbutton.focus();
     }
 
     render () {
         return (
-                <Button onClick={() => this.props.onButtonClick()} ref='togglebutton'>
-                switch result view
+            <Button onClick={() => this.props.onButtonClick()} ref='startbutton'>
+                Press Return Key
             </Button>
         );
     }
 }
 
-export default ToggleButton;
+export default StartButton

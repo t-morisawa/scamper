@@ -4,6 +4,15 @@
   */
 import { combineReducers } from 'redux'
 
+const isStart = (state = false, action) => {
+    switch (action.type) {
+    case 'START':
+        return true;
+    default:
+        return state;
+    }
+}
+
 const initialData = {
     id: 0,
     text: [],
@@ -38,6 +47,7 @@ const resultId = (state = { id: 0 }, action ) => {
 }
 
 const scamperApp = combineReducers({
+    isStart,
     data,
     resultId
 })

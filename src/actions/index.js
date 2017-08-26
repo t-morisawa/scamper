@@ -6,3 +6,7 @@ export const submit = (text) => ({
 export const toggleResult = () => ({
     type: 'TOGGLE_RESULT',
 })
+
+export const start = () => ({
+    type: 'START',
+})

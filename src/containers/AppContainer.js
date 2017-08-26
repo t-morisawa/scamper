@@ -1,27 +1,30 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import Opening from '../presentationals/Opening'
 import Interaction from '../presentationals/Interaction'
 import ResultView from '../presentationals/ResultView'
-import Result from '../presentationals/Result'
+import { data } from '../constants';
 
-let AppContainer = ({ id }) => {
-    if ( id > 6 ) {
+let AppContainer = ({ id, isStart }) => {
+    if ( isStart === false ) {
+        return(
+            <Opening />
+        )
+    }
+    else if ( id === data.length ) {
         return (
-                <div>
                 <ResultView />
-                </div>
         )
     }
     return  (
-            <div>
             <Interaction id={ id }/>
-            </div>
     )
 }
 
 const mapStateToProps = (state) => (
     {
         id: state.data.id,
+        isStart: state.isStart,
     })
 
 AppContainer = connect(mapStateToProps)(AppContainer)

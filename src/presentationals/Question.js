@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react'
 
 const Question = ({ question }) => (
-        <div>
+        <p>
         {question}
-    </div>
+    </p>
 )
 
 export default Question
