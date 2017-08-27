@@ -1,14 +1,13 @@
 import React from 'react'
 import Theme from '../presentationals/Theme'
 import Question from '../presentationals/Question'
-import { scamper, scamperJa } from '../constants/scamper'
-import { questionJa } from '../constants/scamper'
+import { data, description } from '../constants'
 import ReduxForm from '../containers/ReduxForm.js'
 import { Container, Header } from 'semantic-ui-react'
 
 let Interaction = ({ id }) => {
-    const theme = scamper[id] + ` ` + scamperJa[id]
-    const question = questionJa[id]
+    const theme = data[id]
+    const question = description[id]
 
     return (
             <Container style={{ marginTop: '2em' }}>

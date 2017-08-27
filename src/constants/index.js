@@ -1,3 +1,4 @@
-import { scamper } from './scamper';
+import { scamperJa, questionJa } from './scamper';
 
-export const data = scamper;
+export const data = scamperJa;
+export const description = questionJa;

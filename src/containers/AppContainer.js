@@ -4,6 +4,7 @@ import Opening from '../presentationals/Opening'
 import Interaction from '../presentationals/Interaction'
 import ResultView from '../presentationals/ResultView'
 import { data } from '../constants';
+import LoaderExampleText from '../presentationals/LoadSampleText';
 
 let AppContainer = ({ id, isStart }) => {
     if ( isStart === false ) {
