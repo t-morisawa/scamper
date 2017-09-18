@@ -23,6 +23,7 @@ https://www.mindtools.com/pages/article/newCT_02.htm
 > - Put to another use.
 > - Eliminate.
 > - Reverse.
+>
 >You use the tool by asking questions about existing products, using each of the seven prompts above. 
 >These questions help you come up with creative ideas for developing new products, and for improving current ones.
 
