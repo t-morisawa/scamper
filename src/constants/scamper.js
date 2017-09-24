@@ -1,3 +1,6 @@
+export const titleScamper = 'scamper';
+export const titleScamperJa = 'scamperJa';
+
 export const scamper = [
     'Substitute',
     'Combine',
@@ -18,6 +21,16 @@ export const scamperJa = [
     'Rearrage 逆転/並べ替え',
 ]
 
+export const question = [
+    'Replace a part of the product or service with something else',
+    'Combine with something else to create synergies and new value',
+    'Apply it to another product / service / market (utilizing the goodness of existing one)',
+    'Modify parts of goods / services',
+    'Put to other completely different uses and objectives',
+    'Delete part of products or services',
+    'Rearrange parts or reverse them',
+]
+
 export const questionJa = [
     '商品やサービスの一部分を別の何かに置き換える',
     '他の何かと組み合わせて相乗効果や新しい価値を生み出す',
@@ -27,29 +40,3 @@ export const questionJa = [
     '商品やサービスの一部分を削除する',
     'パーツなどを並び替えたり逆にしてみる',
 ]
-
-export const inceptionDeck = [
-    '我われはなぜここにいるのか(Why1)',
-    'エレベーターピッチを作る(Why2)',
-    'パッケージデザインを作る(Why3)',
-    'やらないことリストを作る(Why4)',
-    '「ご近所さん」を探せ(Why5)',
-    '解決案を描く(How1)',
-    '夜も眠れなくなるような問題は何だろう(How2)',
-    '期間を見極める(How3)',
-    '何を諦めるのかをはっきりさせる(How4)',
-    '何がどれだけ必要なのか(How5)',
-];
-
-export const inceptionDeckDescription = [
-    'プロジェクトのゴール',
-    '[]というサービスは、[]したい[]向けの、[]です。ユーザーは[]ができ、[]とは違って、[]が備わっている事が特徴です。',
-    '顧客がそのプロダクトを必要な理由と価値は何か',
-    'やること・やらないこと・後で決めることに分ける',
-    '',
-    '',
-    '',
-    '',
-    '予算・品質・時間・スコープ',
-    '',
-];

@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import { Header } from 'semantic-ui-react'
 
 const Theme = ({ theme }) => (
@@ -6,4 +6,3 @@ const Theme = ({ theme }) => (
 )
 
 export default Theme
-
