@@ -8,9 +8,21 @@ https://t-morisawa.github.io/scamper-ja/ (Japanese)
 
 
 ## setup
+
+### run in local server
+
 ```
 yarn run start
 ```
+
+
+### build js files
+
+```
+yarn run build
+```
+
+`./public/scamper.js` is generated.
 
 ## What's SCAMPER?
 
