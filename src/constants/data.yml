@@ -1,0 +1,135 @@
+scamper-en:
+  title: SCAMPER
+  description: TODO
+  data:
+    - title: Substitute
+      description: Replace a part of the product or service with something else
+    - title: Combine
+      description: Combine with something else to create synergies and new value
+    - title: Adapt
+      description: Apply it to another product / service / market (utilizing the goodness of existing one)
+    - title: Modify
+      description: Modify parts of goods / services
+    - title: Put to other uses
+      description: Put to other completely different uses and objectives
+    - title: Eliminate
+      description: Delete part of products or services
+    - title: Rearrage
+      description: Rearrange parts or reverse them
+
+scamper:
+  title: SCAMPER
+  description: TODO
+  data:
+    - title: Substitute 置き換え
+      description: 商品やサービスの一部分を別の何かに置き換える
+    - title: Combine 結合
+      description: 他の何かと組み合わせて相乗効果や新しい価値を生み出す
+    - title: Adapt 適応
+      description: （既存のものの良さを活かし）別の商品・サービス・市場に応用してみる
+    - title: Modify 修正
+      description: 商品・サービスの一部分に修正を加える
+    - title: Put to other uses 転用
+      description: 商品やサービスを今までとは全く違った用途や目的で売り出してみる
+    - title: Eliminate 削除
+      description: 商品やサービスの一部分を削除する
+    - title: Rearrage 逆転/並べ替え
+      description: パーツなどを並び替えたり逆にしてみる
+
+swot:
+  title: SWOT
+  description: TODO
+  data:
+    - title: Strength 強み
+      description: "[内部][プラス]どのような強みがあるか？/どのように強みを活かすか？"
+    - title: Weakness 弱み
+      description: "[内部][マイナス]どのような弱みがあるか？/どのように弱みを克服するか？"
+    - title: Opportunities 機会
+      description: "[外部][プラス]どのようなチャンスがあるか？/どのように機会を利用するか？"
+    - title: Threats 脅威
+      description: "[外部][マイナス]どのような脅威があるか？/どのように脅威を取り除くか？"
+
+triz:
+  title: TRIZ
+  description: TODO
+  data:
+    - title: 分割原理
+      description: 分子レベルまで分割を考えてみる
+    - title: 分離原理
+      description: 不要なモノを除外したり別の場所に移動してみる
+    - title: 局所性質原理
+      description: 一部の機能・形・材質を変えてみる
+    - title: 非対称原理
+      description: 非対称にする利点を考えてみる
+    - title: 組み合わせ原理
+      description: 2つ以上を結合・組み合わせてみる
+    - title: 汎用性原理
+      description: 多機能にしたり転用できないか考えてみる
+    - title: 入れ子原理
+      description: 入れ子・階層化にしてみる
+    - title: つりあい原理
+      description: 他のモノと調整してバランスを良くしてみる
+    - title: 先取り反作用原理
+      description: 問題が起こる前にあらかじめ対処する方法を探ってみる
+    - title: 先取り作用原理
+      description: 予約タイマーなど事前に待機させる機能をつけてみる
+    - title: 事前保護原理
+      description: エアバッグなど最悪の場合の準備を考えてみる
+    - title: 等ポテンシャル原理
+      description: 負荷を等しく分配してみる
+    - title: 逆発想原理
+      description: 従来とは逆にしてみる
+    - title: 曲面原理
+      description: 立体にしたり回転させてみる
+    - title: ダイナミック性原理
+      description: 最適な環境にして動かしやすくする
+    - title: アバウト原理
+      description: 完璧主義を捨ててみる
+    - title: 他次元移行原理
+      description: 点や直線を二次元・三次元にしてみる
+    - title: 機械的振動原理
+      description: 振動させて他のモノと共鳴させてみる
+    - title: 周期的作用原理
+      description: 一定の動きやリズムを与えてみる
+    - title: 連続性原理
+      description: 同じ動作やプロセスを繰り返してみる
+    - title: 高速実行原理
+      description: 高速で動かしてみる
+    - title: “災い転じて福となす”の原理
+      description: マイナス面を利用してプラスにできないかを考えてみる
+    - title: フィードバック原理
+      description: 結果を見直す機能をつけてみる
+    - title: 仲介原理
+      description: 直接ではなく仲介させて操作してみる
+    - title: セルフサービス原理
+      description: 自動的に動くようにしてみる
+    - title: 代替原理
+      description: コピーしたり代用してみる
+    - title: “高価な長寿命より安価な短寿命”の原理
+      description: 使い捨てできないかを考えてみる
+    - title: 機械的システム代替原理
+      description: 従来のシステムを新しい技術に変えてみる
+    - title: 流体利用原理
+      description: 柔らかいモノに変えてみる
+    - title: 薄膜利用原理
+      description: 薄いモノに変えてみる
+    - title: 多孔質利用原理
+      description: スキマを利用してみる
+    - title: 変色利用原理
+      description: 色や透明度を変えてみる
+    - title: 均質性原理
+      description: 他のモノと性質を合わせて規格化してみる
+    - title: 排除／再生原理
+      description: 自動で排除したり再構築できないかを考えてみる
+    - title: パラメータ原理
+      description: 物質・濃度・柔軟性・温度・圧力など性質の条件を変更してみる
+    - title: 相変化原理
+      description: 形や性質を変えてみる
+    - title: 熱膨張原理
+      description: 熱を利用して膨張させてみる
+    - title: 高濃度酸素利用原理
+      description: 酸素濃度を上げてみる
+    - title: 不活性雰囲気利用原理
+      description: 酸化防止や真空にしてみる
+    - title: 複合材料原理
+      description: 材料同士を結合・混ぜてみる
