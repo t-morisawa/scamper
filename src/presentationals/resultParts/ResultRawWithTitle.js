@@ -7,7 +7,7 @@ const ResultRawWithTitle = ({ text }) => {
     let i = 0;
     const resultList = result.map((elem) => {
         i++;
-        return <List.Item key={elem.id}><Header as='h2'>{data[i-1]}</Header>{elem.text}</List.Item>
+      return <List.Item key={elem.id}><Header as='h2'>{data[i-1].title}</Header>{elem.text}</List.Item>
     });
     return (
             <List>

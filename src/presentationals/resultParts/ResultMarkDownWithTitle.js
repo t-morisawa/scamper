@@ -6,7 +6,7 @@ const ResultMarkDownWithTitle = ({ text }) => {
     let i = 0;
     const resultList = result.map((elem) => {
         i++;
-        return `# ${data[i-1]}
+        return `# ${data[i-1].title}
 ${elem.text}
 
 `});

@@ -6,8 +6,8 @@ import ReduxForm from '../containers/ReduxForm.js'
 import { Container, Header } from 'semantic-ui-react'
 
 let Interaction = ({ id }) => {
-    const theme = data[id]
-    const question = description[id]
+  const theme = data[id].title;
+  const question = data[id].description;
 
     return (
             <Container style={{ marginTop: '2em' }}>
