@@ -12,17 +12,25 @@ https://t-morisawa.github.io/scamper-ja/ (Japanese)
 ### run in local server
 
 ```
-yarn run start
+IDEA_TYPE=scamper yarn run start
 ```
 
 
 ### build js files
 
+#### single file build
+
 ```
-yarn run build
+IDEA_TYPE=scamper yarn run build
 ```
 
 `./public/scamper.js` is generated.
+
+#### all type build
+
+```
+$ node ./build.js
+```
 
 ## What's SCAMPER?
 

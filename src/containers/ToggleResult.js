@@ -15,4 +15,3 @@ const ToggleResult = connect(
 )(ToggleButton)
 
 export default ToggleResult
-
