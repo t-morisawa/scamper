@@ -1,6 +1,6 @@
 import yaml from './yaml-parser';
 
-const item = yaml.swot; // ここを環境変数で指定できるようにしたい
+const item = yaml[IDEA_TYPE];
 const title = item.title;
 const description = item.description;
 const list = item.data;
