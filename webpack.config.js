@@ -1,8 +1,10 @@
+const webpack = require('webpack');
+
 module.exports = {
   entry: __dirname + '/src/index.js',
   output: {
     path: __dirname + '/public',
-    filename: 'scamper.js',
+    filename: process.env.IDEA_TYPE + '.js',
     publicPath: ''
   },
   module: {
@@ -18,5 +20,10 @@ module.exports = {
       },
       { test: /\.(ya?ml)$/, loader: "js-yaml-loader" }
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      IDEA_TYPE: JSON.stringify(process.env.IDEA_TYPE),
+    })
+  ],
 }
