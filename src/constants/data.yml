@@ -1,6 +1,10 @@
 scamper-en:
   title: SCAMPER
-  description: TODO
+  description: |
+    SCAMPER is a method for improving new ideas.
+    It helps to generate new ideas for products and services, by looking at them from seven points of view.
+
+    Let's imagine one existing idea and let us fill in the form for improvement.
   data:
     - title: Substitute
       description: Replace a part of the product or service with something else
@@ -19,7 +23,12 @@ scamper-en:
 
 scamper:
   title: SCAMPER
-  description: TODO
+  description: |
+    SCAMPERは新しいアイデアを出すための手法の一種です。
+    既存の製品やサービスを7つの観点から見て考えることによって、
+    新しい製品やサービスのアイデアを生成するのに役立ちます。
+
+    既存のアイデアを一つ思い浮かべて、それに対する改善案をフォームに入力していきましょう。
   data:
     - title: Substitute 置き換え
       description: 商品やサービスの一部分を別の何かに置き換える
@@ -38,7 +47,11 @@ scamper:
 
 swot:
   title: SWOT
-  description: TODO
+  description: |
+    SWOTは意思決定のための手法です。
+    内部・外部要因のプラス・マイナス要因を分析し、目標が達成可能かを判断します。
+
+    目標を一つ思い浮かべて、それに対する現状分析をフォームに入力していきましょう。
   data:
     - title: Strength 強み
       description: "[内部][プラス]どのような強みがあるか？/どのように強みを活かすか？"
@@ -51,7 +64,12 @@ swot:
 
 triz:
   title: TRIZ
-  description: TODO
+  description: |
+    TRIZは課題解決の手法の一種です。
+    課題を40アプローチから見て考えることによって、
+    課題を解決するためのアイデアを生成するのに役立ちます。
+
+    既存のアイデアを一つ思い浮かべて、それに対する改善案をフォームに入力していきましょう。
   data:
     - title: 分割原理
       description: 分子レベルまで分割を考えてみる
