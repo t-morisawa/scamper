@@ -12,14 +12,22 @@ https://t-morisawa.github.io/scamper-ja/ (Japanese)
 ### run in local server
 
 ```
-yarn run start
+IDEA_TYPE=scamper yarn run start
 ```
 
 
 ### build js files
 
+#### single file build
+
 ```
-yarn run build
+IDEA_TYPE=scamper yarn run build
+```
+
+#### all type build
+
+```
+$ ./build.sh
 ```
 
 `./public/scamper.js` is generated.
