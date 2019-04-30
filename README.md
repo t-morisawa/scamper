@@ -24,13 +24,13 @@ IDEA_TYPE=scamper yarn run start
 IDEA_TYPE=scamper yarn run build
 ```
 
+`./public/scamper.js` is generated.
+
 #### all type build
 
 ```
-$ ./build.sh
+$ node ./build.js
 ```
-
-`./public/scamper.js` is generated.
 
 ## What's SCAMPER?
 
