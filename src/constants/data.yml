@@ -151,3 +151,47 @@ triz:
       description: 酸化防止や真空にしてみる
     - title: 複合材料原理
       description: 材料同士を結合・混ぜてみる
+
+blog:
+  title: ブログ記事の書き方
+  description: |
+    マーケティング手法でどうたらこうたら
+  data:
+    - title: その記事の一番面白いところは何か
+      description: 記事を読んだ人が何を得られるのかを考えましょう
+    - title: 記事は誰に向けて書いているか
+      description: ターゲットをはっきりさせましょう
+    - title: 敵は誰か
+      description: 共通の敵がいるとき人は最も結束します
+    - title: 一つ目の争点は何か
+      description: 記事の主張に対する反論と、それに対する反論を考えましょう
+    - title: ニつ目の争点は何か
+      description: もう一つ考えましょう
+    - title: 援助者は誰か
+      description: 逆に、味方は誰でしょうか？
+    - title: 自分の欠点は何か
+      description: 弱みを見せましょう
+    - title: それを逆に生かせないか
+      description: 弱さは逆手に取りましょう
+    - title: 面白い部分を別のもので例えると何か
+      description: 別の角度で見てみましょう
+    - title: それにまつわる昔話・体験談は何か
+      description: 具体例を語ってみましょう
+    - title: それをあなたが書く意味は何か
+      description: 差別化要素になります
+    - title: 読者に問いかけできるか
+      description: 読者が書いたことを元に議論できるようにしましょう
+    - title: あるあるネタは言えないか
+      description: くだらないものでもいいのです
+    - title: 数字で言ってみる
+      description: ナンバーワンとか、一億個とかそういうの
+    - title: 偉人や権威は同じことを言っていないか
+      description: 歴史は繰り返します
+    - title: 子供に主張してみる
+      description: 退屈になっていませんか？
+    - title: おばあちゃんに主張してみる
+      description: 難しくなってませんか？
+    - title: キャッチコピーをつけてみる
+      description: 13文字以内で説明しましょう
+    - title: その記事の一番面白いところは何か
+      description: 最後にもう一度面白いところを確認しましょう
