@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 
 module.exports = {
+  mode: 'production',
   entry: __dirname + '/src/index.js',
   output: {
     path: __dirname + '/public',
@@ -8,7 +9,7 @@ module.exports = {
     publicPath: ''
   },
   module: {
-    loaders: [
+    rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
       {
         test: /\.css$/,
