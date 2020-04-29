@@ -1,10 +1,10 @@
 import React from 'react'
 import { List } from 'semantic-ui-react'
 
-const ResultList = ({ text }) => {
-    const result = text
+const ResultList = ({ ideas }) => {
+    const result = ideas
     const resultList = result.map((elem) =>
-                                  <List.Item key={elem.id}>{elem.text}</List.Item>
+                                  <List.Item key={elem.id}>{elem.ideas}</List.Item>
                                  );
     return (
             <List>

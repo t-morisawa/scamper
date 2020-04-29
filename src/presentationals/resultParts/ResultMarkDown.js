@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ResultMarkDown = ({ text }) => {
-    const result = text
+const ResultMarkDown = ({ ideas }) => {
+    const result = ideas
     const resultList = result.map((elem) =>
-                                  ` - ${elem.text}
+                                  ` - ${elem.ideas}
 `);
 
     return (
