@@ -1,14 +1,10 @@
 import React from 'react'
 import Theme from '../presentationals/Theme'
 import Question from '../presentationals/Question'
-import { data, description } from '../constants'
 import ReduxForm from '../containers/ReduxForm.js'
 import { Container, Header } from 'semantic-ui-react'
 
-let Interaction = ({ index }) => {
-  const theme = data[index].title;
-  const question = data[index].description;
-
+let Interaction = ({ theme, question }) => {
     return (
             <Container style={{ marginTop: '2em' }}>
             <Theme theme={theme}/>
