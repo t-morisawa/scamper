@@ -1,13 +1,13 @@
 import React from 'react'
 import { data } from '../../constants'
 
-const ResultMarkDownWithTitle = ({ text }) => {
-    const result = text
+const ResultMarkDownWithTitle = ({ ideas }) => {
+    const result = ideas
     let i = 0;
     const resultList = result.map((elem) => {
         i++;
         return `# ${data[i-1].title}
-${elem.text}
+${elem.ideas}
 
 `});
 

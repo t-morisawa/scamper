@@ -1,10 +1,10 @@
 /**
-  * id: ページ番号
-  * text: 保存されたテキスト
+  * index: ページ番号
+  * ideas: 保存されたテキスト
   */
 import { combineReducers } from 'redux'
 
-const isStart = (state = false, action) => {
+const home = (state = { isStart : false }, action) => {
     switch (action.type) {
     case 'START':
         return true;
@@ -14,32 +14,32 @@ const isStart = (state = false, action) => {
 }
 
 const initialData = {
-    id: 0,
-    text: [],
+    index: 0,
+    ideas: [],
 }
 
-const data = (state = initialData, action) => {
+const main = (state = initialData, action) => {
     switch (action.type) {
     case 'SUBMIT':
-        let log = state.text
+        let log = state.ideas
         log.push({
-            id: state.id,
-            text: action.text
+            index: state.index,
+            ideas: action.text
         })
         return {
-            id: state.id + 1,
-            text: log
+            index: state.index + 1,
+            ideas: log
         }
     default:
         return state
     }
 }
 
-const resultId = (state = { id: 0 }, action ) => {
+const result = (state = { index: 0 }, action ) => {
     switch (action.type) {
     case 'TOGGLE_RESULT':
         return {
-            id: state.id + 1,
+            index: state.index + 1,
         }
     default:
         return state
@@ -47,9 +47,9 @@ const resultId = (state = { id: 0 }, action ) => {
 }
 
 const scamperApp = combineReducers({
-    isStart,
-    data,
-    resultId
+  home,
+  main,
+  result,
 })
 
 export default scamperApp

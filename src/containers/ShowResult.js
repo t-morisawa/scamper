@@ -5,23 +5,23 @@ import ResultMarkDown from '../presentationals/resultParts/ResultMarkDown'
 import ResultMarkDownWithTitle from '../presentationals/resultParts/ResultMarkDownWithTitle'
 import ResultRawWithTitle from '../presentationals/resultParts/ResultRawWithTitle'
 
-let ShowResult = ({ id, text }) => {
+let ShowResult = ({ id, ideas }) => {
     switch (id % 4) {
     case 0:
         return (
-                <ResultList text={ text }/>
+                <ResultList ideas={ ideas }/>
         )
     case 1:
         return (
-                <ResultMarkDown text={ text }/>
+                <ResultMarkDown ideas={ ideas }/>
         )
     case 2:
         return (
-                <ResultMarkDownWithTitle text = { text }/>
+                <ResultMarkDownWithTitle ideas = { ideas }/>
         )
     case 3:
         return (
-                <ResultRawWithTitle text = { text }/>
+                <ResultRawWithTitle ideas = { ideas }/>
         )
     default:
     }
@@ -29,8 +29,8 @@ let ShowResult = ({ id, text }) => {
 
 const mapStateToProps = (state) => (
     {
-        id: state.resultId.id,
-        text: state.data.text,
+        id: state.result.index,
+        ideas: state.main.ideas,
     })
 
 ShowResult = connect(mapStateToProps)(ShowResult)

@@ -1,12 +1,12 @@
+export const start = () => ({
+  type: 'START',
+})
+
 export const submit = (text) => ({
-    type: 'SUBMIT',
-    text
+  type: 'SUBMIT',
+  text
 })
 
 export const toggleResult = () => ({
-    type: 'TOGGLE_RESULT',
-})
-
-export const start = () => ({
-    type: 'START',
+  type: 'TOGGLE_RESULT',
 })
