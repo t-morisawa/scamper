@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Container, Header } from 'semantic-ui-react'
-import Start from '../containers/Start'
 import StartButton from '../presentationals/StartButton'
 import Explanation from './Explanation'
 
