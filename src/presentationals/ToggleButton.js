@@ -12,7 +12,7 @@ class ToggleButton extends Component {
 
     render () {
         return (
-                <Button onClick={() => this.props.onButtonClick()} ref='togglebutton'>
+                <Button onClick={this.props.onClick} ref='togglebutton'>
                 switch result view
             </Button>
         );

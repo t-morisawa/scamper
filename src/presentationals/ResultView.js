@@ -1,12 +1,12 @@
 import React from 'react'
-import ResultIdeas from '../presentationals/ResultIdeas.js'
-import ToggleResult from '../containers/ToggleResult.js'
+import ResultIdeas from './ResultIdeas.js'
+import ToggleButton from './ToggleButton.js'
 import { Container } from 'semantic-ui-react'
 
-let ResultView = ({ ideas, index }) => {
+let ResultView = ({ ideas, index, onToggleResultButtonClick }) => {
   return (
       <Container style={{ marginTop: '2em' }}>
-      <ToggleResult />
+      <ToggleButton onClick={onToggleResultButtonClick} />
       <ResultIdeas ideas={ideas} index={index} />
       </Container>
   )
