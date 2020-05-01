@@ -6,7 +6,7 @@ import { start } from '../actions'
 const mapStateToProps = (state) => ({})
 
 const mapDispatchToProps = ({
-    onButtonClick: start
+  onButtonClick: start
 })
 
 const Start = connect(

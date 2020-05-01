@@ -12,7 +12,7 @@ class StartButton extends Component {
 
     render () {
         return (
-            <Button onClick={() => this.props.onButtonClick()} ref='startbutton'>
+            <Button onClick={this.props.onClick} ref='startbutton'>
                 Press Return Key
             </Button>
         );

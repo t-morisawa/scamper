@@ -5,12 +5,13 @@ import Interaction from '../presentationals/Interaction'
 import ResultView from '../presentationals/ResultView'
 import LoaderExampleText from '../presentationals/LoadSampleText';
 import { title, description, data } from '../constants'
+import { start } from '../actions'
 
-let AppContainer = ({ isStart, indexMain, ideas, indexResult }) => {
+let AppContainer = ({ isStart, indexMain, ideas, indexResult, onStartButtonClick }) => {
 
   if ( isStart === false ) {
     return(
-        <Opening title={title} description={description} />
+        <Opening title={title} description={description} onStartButtonClick={onStartButtonClick} />
     )
   } else if ( indexMain === data.length ) {
     return (
@@ -34,6 +35,10 @@ const mapStateToProps = (state) => (
     indexResult: state.result.index,
   })
 
-AppContainer = connect(mapStateToProps)(AppContainer)
+const mapDispatchToProps = ({
+  onStartButtonClick: start,
+})
+
+AppContainer = connect(mapStateToProps, mapDispatchToProps)(AppContainer)
 
 export default AppContainer
