@@ -28,7 +28,13 @@ const main = (state = initialData, action) => {
     })
     return {
       index: state.index + 1,
-      ideas: log
+      ideas: log,
+      text: ''
+    }
+  case 'INPUT_TEXT':
+    return {
+      ...state,
+      text: action.text
     }
   default:
     return state

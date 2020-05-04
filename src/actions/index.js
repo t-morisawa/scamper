@@ -10,3 +10,8 @@ export const submit = (text) => ({
 export const toggleResult = () => ({
   type: 'TOGGLE_RESULT',
 })
+
+export const inputText = (text) => ({
+  type: 'INPUT_TEXT',
+  text
+})

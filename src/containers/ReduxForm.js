@@ -1,37 +1,56 @@
 import React, { Component } from 'react';
 import { componentDidMount } from 'react-dom'
 import { connect } from 'react-redux'
-import { submit as submitAction } from '../actions'
+import { submit, inputText } from '../actions'
 import { Form } from 'semantic-ui-react'
 
 class ReduxForm extends Component {
-    constructor(props) {
-        super(props)
-    }
+  constructor(props) {
+    super(props)
 
-    componentDidMount() {
-        this.nameInput.focus();
-    }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
-    render() {
-        return (
-                <Form onSubmit={events => {
-                    return new Promise(resolve => {
-                        events.preventDefault()
-                        this.props.dispatch(submitAction(this.nameInput.value))
-                        this.nameInput.value = ''
-                    })
-                }}>
-                <div>
-                <input ref={node => {
-                    this.nameInput = node
-                }} />
-                </div>
-                </Form>
-        );
-    }
+  componentDidMount() {
+    this.nameInput.focus();
+  }
+
+  handleChange(event) {
+    this.props.inputText(event.target.value)
+  }
+
+  handleSubmit(event) {
+    this.props.submit(this.props.value)
+  }
+
+  render() {
+    return (
+        <Form onSubmit={this.handleSubmit}>
+        <div>
+        <input ref={node => {
+          this.nameInput = node
+        }}
+        value={this.props.value}
+        onChange={this.handleChange}
+        />
+        </div>
+        </Form>
+    );
+  }
 }
 
-ReduxForm = connect()(ReduxForm)
+const mapStateToProps = state => (
+  {
+    value: state.main.text
+  }
+)
+
+const mapDispatchToProps = {
+  inputText,
+  submit
+}
+
+ReduxForm = connect(mapStateToProps, mapDispatchToProps)(ReduxForm)
 
 export default ReduxForm;
