@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { componentDidMount } from 'react-dom'
 import { connect } from 'react-redux'
-import { submit as submitAction } from '../actions'
+import { submit } from '../actions'
 import { Form } from 'semantic-ui-react'
 
 class ReduxForm extends Component {
@@ -18,7 +18,7 @@ class ReduxForm extends Component {
                 <Form onSubmit={events => {
                     return new Promise(resolve => {
                         events.preventDefault()
-                        this.props.dispatch(submitAction(this.nameInput.value))
+                        this.props.dispatch(submit(this.nameInput.value))
                         this.nameInput.value = ''
                     })
                 }}>
