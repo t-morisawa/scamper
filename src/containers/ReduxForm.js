@@ -21,7 +21,6 @@ class ReduxForm extends Component {
   }
 
   handleSubmit(event) {
-    event.preventDefault()
     this.props.submit(this.props.value)
   }
 
@@ -43,7 +42,7 @@ class ReduxForm extends Component {
 
 const mapStateToProps = state => (
   {
-    value: state.text
+    value: state.main.text
   }
 )
 
