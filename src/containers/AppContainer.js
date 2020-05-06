@@ -4,22 +4,26 @@ import Opening from '../presentationals/Opening'
 import Interaction from '../presentationals/Interaction'
 import ResultView from '../presentationals/ResultView'
 import LoaderExampleText from '../presentationals/LoadSampleText';
-import { title, description, data } from '../constants'
 import { start, toggleResult } from '../actions'
+import data from '../constants'
+
+
+const description = data[IDEA_TYPE];
+
 
 let AppContainer = ({ isStart, indexMain, ideas, indexResult, onStartButtonClick, onToggleResultButtonClick }) => {
 
   if ( isStart === false ) {
     return(
-        <Opening title={title} description={description} onStartButtonClick={onStartButtonClick} />
+        <Opening title={description.title} description={description.description} onStartButtonClick={onStartButtonClick} />
     )
-  } else if ( indexMain === data.length ) {
+  } else if ( indexMain === description.body.length ) {
     return (
-        <ResultView ideas={ideas} index={indexResult} onToggleResultButtonClick={onToggleResultButtonClick} />
+        <ResultView ideas={ideas} index={indexResult} onToggleResultButtonClick={onToggleResultButtonClick} descriptionBody={description.body} />
     )
   } else {
-    const theme = data[indexMain].title;
-    const question = data[indexMain].description;
+    const theme = description.body[indexMain].title;
+    const question = description.body[indexMain].description;
 
     return  (
         <Interaction theme={theme} question={question} />
