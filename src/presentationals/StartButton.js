@@ -4,15 +4,16 @@ import { Button } from 'semantic-ui-react'
 class StartButton extends Component {
   constructor(props) {
     super(props)
+    this.button = React.createRef();
   }
 
   componentDidMount() {
-    this.refs.startbutton.focus();
+    this.button.current.focus();
   }
 
   render () {
     return (
-        <Button onClick={this.props.onClick} ref='startbutton'>
+        <Button onClick={this.props.onClick} ref={this.button}>
         Press Return Key
       </Button>
     );
