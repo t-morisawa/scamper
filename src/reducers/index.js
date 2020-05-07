@@ -4,7 +4,7 @@
  */
 import { combineReducers } from 'redux'
 
-const home = (state = { isStart : false }, action) => {
+const start = (state = { isStart : false }, action) => {
   switch (action.type) {
   case 'START':
     return true;
@@ -53,7 +53,7 @@ const result = (state = { index: 0 }, action ) => {
 }
 
 const scamperApp = combineReducers({
-  home,
+  start,
   main,
   result,
 })

@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Opening from '../presentationals/Opening'
+import StartView from '../presentationals/StartView'
 import Interaction from '../presentationals/Interaction'
 import ResultView from '../presentationals/ResultView'
 import LoaderExampleText from '../presentationals/LoadSampleText';
@@ -15,7 +15,7 @@ let AppContainer = ({ isStart, indexMain, ideas, indexResult, onStartButtonClick
 
   if ( isStart === false ) {
     return(
-        <Opening title={description.title} description={description.description} onStartButtonClick={onStartButtonClick} />
+        <StartView title={description.title} description={description.description} onStartButtonClick={onStartButtonClick} />
     )
   } else if ( indexMain === description.body.length ) {
     return (
@@ -33,7 +33,7 @@ let AppContainer = ({ isStart, indexMain, ideas, indexResult, onStartButtonClick
 
 const mapStateToProps = (state) => (
   {
-    isStart: state.home.isStart,
+    isStart: state.start.isStart,
     indexMain: state.main.index,
     ideas: state.main.ideas,
     indexResult: state.result.index,
