@@ -3,7 +3,7 @@ import { Container, Header } from 'semantic-ui-react'
 import StartButton from '../presentationals/StartButton'
 import Explanation from './Explanation'
 
-const Opening = ({ title, description, onStartButtonClick }) => {
+const Top = ({ title, description, onStartButtonClick }) => {
   return (
       <Container style={{ marginTop: '2em' }}>
       <Header as='h1'>{title}</Header>
@@ -13,4 +13,4 @@ const Opening = ({ title, description, onStartButtonClick }) => {
   )
 }
 
-export default Opening
+export default Top
