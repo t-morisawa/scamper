@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Start from '../presentationals/Start'
+import StartView from '../presentationals/StartView'
 import Interaction from '../presentationals/Interaction'
 import ResultView from '../presentationals/ResultView'
 import LoaderExampleText from '../presentationals/LoadSampleText';
@@ -15,7 +15,7 @@ let AppContainer = ({ isStart, indexMain, ideas, indexResult, onStartButtonClick
 
   if ( isStart === false ) {
     return(
-        <Start title={description.title} description={description.description} onStartButtonClick={onStartButtonClick} />
+        <StartView title={description.title} description={description.description} onStartButtonClick={onStartButtonClick} />
     )
   } else if ( indexMain === description.body.length ) {
     return (
