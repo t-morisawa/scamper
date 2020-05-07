@@ -2,7 +2,7 @@ import React from 'react'
 import { Container } from 'semantic-ui-react'
 import { List } from 'semantic-ui-react'
 
-const Explanation = ({ description }) => {
+const TopDescription = ({ description }) => {
   return (
       <div>
         {description.split("\n").map((m, index) => {
@@ -17,4 +17,4 @@ const Explanation = ({ description }) => {
   );
 }
 
-export default Explanation
+export default TopDescription
